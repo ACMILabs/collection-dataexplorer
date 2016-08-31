@@ -1,0 +1,260 @@
+/*
+  ACMI Collection Data Explorer
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  margin-bottom: 120px;
+}
+
+a, .fake-link {
+  color: #666699;
+  font-weight: 600;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+a:hover, a:focus, a:active, .fake-link:hover {
+  text-decoration: none;
+  color: #3B3B59;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.fade-show {
+  transition: 1s;
+  opacity: 1;
+}
+
+.output {
+  min-height: 250px;
+}
+
+.input-borderless {
+  border: none;
+  color: #aaa;
+}
+
+.list-output {
+  -webkit-columns: 200px 3;
+  -moz-columns: 200px 3;
+  columns: 200px 3;
+}
+.list-output p {
+  font-size: 1em;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  line-height: 1.5em;
+  margin: 0;
+}
+.value-emphasised {
+  font-weight: 600;
+}
+
+/*********************
+
+Vertical rhythm
+
+*********************/
+
+p, h1, h2, h3, h4 {
+    line-height:26px;
+    margin-bottom: 13px;
+}
+
+/*********************
+
+Overall page styling
+
+*********************/
+
+.page-header {
+  background-color: #3B3B59;
+  margin-top: 0;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:hover {
+  color: white;
+  font-size: 22px;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  left: 0;
+  right: 0;
+}
+
+article {
+  min-height: 70vh;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #aaa;
+  line-height: 1.5em;
+}
+#alpha {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.footer-logos {
+  text-align: right;
+}
+.footer-logos img {
+  vertical-align: bottom;
+  width: 40%;
+  margin-left: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+.output h2 {
+  margin-bottom: 0.5em;
+}
+.title p {
+  margin-bottom: 1em;
+}
+.title-description {
+  color: #666;
+}
+.title-metadata {
+
+}
+
+/***************
+
+  Styling details
+
+***************/
+
+h3:after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #9999E5;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.github-link {
+  margin-top: 1em;
+}
+
+.github-link a {
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+.github-link a:hover {
+  opacity: 1;
+}
+.github-link svg {
+  max-width: 20px;
+  height: auto;
+}
+
+.loader {
+  color: #666699;
+  opacity: 0.5;
+  line-height: 26px;
+}
+.loader-text, .loader img {
+  -webkit-animation: fade 2s;
+  animation: fade 2s;
+  opacity: 1;
+ }
+
+ .loader img {
+  max-width: 40px;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+ }
+
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/***************
+
+  Bootstrap override
+
+***************/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+hr {
+  margin: 10px 0;
+}
+
+/***************
+
+  Noscript styling
+
+***************/
+
+.noscript-body {
+  opacity: 0.2;
+}
+
+.noscript-notice {
+  color: #ee3366;
+}
+
+/***************
+
+  Alpha label
+
+***************/
+
+.alpha-asterisk p {
+    color: #666699;
+    font-weight: 400;
+    position: absolute;
+    padding: 0.65em 0 0.75em 0;
+    margin: 0.5em 1em 0.5em 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+@media (max-width: 600px) {
+  .alpha-asterisk p {
+    padding: 0.75em 0 0.75em 3.5em;
+  }
+  .alpha-asterisk-text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .alpha-asterisk p {    
+      padding: 0.75em 0 0.75em 0em;
+      margin: 0.65em 1em 0.5em 0;
+      color: transparent;
+  }
+}

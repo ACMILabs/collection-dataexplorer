@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ACMI Collection Data Explorer</title>
+	<meta name="description" content="A data browser providing experimental access to what used to be ACMI’s lending collection. It contains roughly 38,000 items dating back to the 1890s across a wide range of styles - feature films, shorts, documentaries, student works, instructional and experimental films. " />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="/dataexplorer/css/reset.css" />  
+	<!-- Bootstrap -->
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<!-- Styles for this site -->
+	<link rel="stylesheet" href="/dataexplorer/css/style.css?v=1.0.0" />
+
+	<!-- set base for the web app -->
+	<base href="/dataexplorer/" />
+
+	<!--
+
+	Greetings!
+
+	This is an Alpha version of ACMI's Collection Data Explorer, a simple
+	React JS / Firebase web app designed for exploring the ACMI collection data release at:
+
+	github.com/acmilabs/collection
+
+	In case you have found this in another place, the source code for this web app can be found at:
+
+	github.com/acmilabs/collection-dataexplorer
+
+	-->
+
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+
+	<!-- Place GTM code here! -->
+
+<!-- End Google Tag Manager -->
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- beginning of app -->
+  <div>
+	
+	  <!-- Title -->
+	  	<header class="page-header">
+		  	<div class="container">
+		  		<div class="row">
+		  			<div class="col-sm-8 col-xs-10">
+						<h1><a href="/dataexplorer">Collection Data Explorer</a></h1>
+					</div>
+					<div class="col-sm-4 col-xs-2">
+						<div class="alpha-asterisk">
+							<p>
+								<span>*</span>
+								<span class="alpha-asterisk-text">Alpha</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+
+			<!-- Main page view - React JS gets attached here... -->
+			<noscript>
+				<div class="noscript-body"><h3>What moving image moves you?</h3>
+					<p>Animation? Feature films? Shorts? Student works?
+					Or are you fascinated by a particular subject, say… castles, painting, jazz, literature or fashion? An almost limitless range of topics can be explored – see what you can find (and yes, we have films on glass blowing, cats, fire control and mental health, in case you were wondering). After something more… how about magic, permaculture, masochism, horses, dystopias, Buddhism, football, dreams, or UFOs.</p>
+					<p>This browser provides experimental access to what used to be ACMI’s lending collection. It contains roughly 38,000 items dating back to the 1890s across a wide range of styles – feature films, shorts, documentaries, student works, instructional and experimental films. These works are available to view for free inside the museum’s Australian Mediatheque.
+					Future releases will include other parts of our larger collection of over 180,000 items.</p>
+					</div>
+					<div class="noscript-notice">
+					<h4>This data browser requires JavaScript, please switch it on to explore the collection.</h4>
+				</div>
+			</noscript>
+
+			<article id="root">
+
+				<!-- React JS gets attached here! -->
+
+			</article>
+		
+		</div>
+
+		
+		<footer class="container page-footer">
+			<div class="row">
+				<hr/>
+				<div class="page-footer-content">
+					<div class="col-md-9 col-sm-8 col-xs-6">
+						<p>
+							An <a href="https://labs.acmi.net.au/" target="_blank">ACMI Labs</a> project. <a href="https://github.com/ACMILabs/collection-dataexplorer" target="_blank">View source</a>.<br/>
+							<span id="alpha">* This is in alpha, and things could break!</span>
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6 footer-logos">
+						<div class="row footer-logos">
+							<div class="col-xs-12">
+								<a href="http://creative.vic.gov.au/" target="_blank"><img src="/dataexplorer/img/creative-victoria-logo.svg" class="cv-logo" /></a>
+								<a href="https://www.acmi.net.au/" target="_blank"><img src="/dataexplorer/img/acmi-logo-slimline.svg" class="acmi-logo-footer" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+	<!-- end of app -->
+
+
+<!-- Helper methods used for this web app (could really be bundled in with the rest of the code) -->
+<script src="/dataexplorer/js/acmi-helper.js?v=1.0.0"></script>
+<!-- Bundled and minified packages and code for this web app -->
+<script src="/dataexplorer/build/bundle.js"></script>
+
+</body>
+
+</html>
