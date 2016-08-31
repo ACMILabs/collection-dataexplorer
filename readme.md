@@ -2,7 +2,9 @@
 
 This is an Alpha version of a collection data explorer for the ACMI lending collection dataset, available at https://github.com/ACMILabs/collection
 
-While this project can be forked, it's really just an example of the sorts of web apps that could be built against this dataset, and we'd love to see what you come up with.
+Have a play with the collection explorer at: https://guides.acmi.net.au/dataexplorer
+
+While this project can be forked, it's really an example of the sorts of web apps that could be built against this dataset, and we'd love to see what you come up with.
 
 ## Specifics of this web app
 
